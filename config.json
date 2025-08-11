@@ -6,6 +6,26 @@
       "name": "电影天堂资源",
       "detail": "http://caiji.dyttzyapi.com"
     },
+    "ykzy": {
+      "api": "https://api.ukuapi88.com/api.php/provide/vod",
+      "name": "U酷资源",
+      "detail": "https://ukuzy.com"
+    },
+     "hnzy": {
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
+      "name": "红牛资源",
+      "detail": "https://hongniuzy.com"
+    },
+     "gszy": {
+      "api": "https://api.guangsuapi.com/api.php/provide/vod",
+      "name": "光速资源",
+      "detail": "https://guangsuzy.com"
+    },
+     "xlzy": {
+      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+      "name": "新浪资源",
+      "detail": "https://xinlangzy.com"
+    },
      "jyzy": {
       "api": "https://jyzyapi.com/provide/vod",
       "name": "金鹰资源",
@@ -18,7 +38,7 @@
     },
     "heimuer": {
       "api": "https://json.heimuer.xyz/api.php/provide/vod",
-      "name": "黑木耳",
+      "name": "hme",
       "detail": "https://heimuer.tv"
     },
     "ruyi": {
