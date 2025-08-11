@@ -1,4 +1,4 @@
-# MoonTV
+# MoonTV此为分支，非主要
 
 <div align="center">
   <img src="public/logo.png" alt="LibreTV Logo" width="120">
@@ -155,20 +155,20 @@
 ```bash
 # 拉取预构建镜像
 # 推荐使用具体版本号标签，确保稳定性
-docker pull ghcr.io/lunatechlab/moontv:1.0.4
+docker pull ghcr.io/ishangyi/moontv:1.0.4
 # 或拉取最新版本
-docker pull ghcr.io/lunatechlab/moontv:latest
+docker pull ghcr.io/ishangyi/moontv:latest
 
 # 运行容器
 # -d: 后台运行  -p: 映射端口 3000 -> 3000
-docker run -d --name moontv -p 3000:3000 --env PASSWORD=your_password ghcr.io/lunatechlab/moontv:latest
+docker run -d --name moontv -p 3000:3000 --env PASSWORD=your_password ghcr.io/ishangyi/moontv:latest
 ```
 
 #### 可用标签
 
-- `ghcr.io/lunatechlab/moontv:1.0.4` - 具体版本号，推荐用于生产环境
-- `ghcr.io/lunatechlab/moontv:latest` - 最新版本，可能包含最新功能但也可能有未测试的变化
-- `ghcr.io/lunatechlab/moontv:pr-{number}` - PR 构建版本，用于测试新功能
+- `ghcr.io/ishangyi/moontv:1.0.4` - 具体版本号，推荐用于生产环境
+- `ghcr.io/ishangyi/moontv:latest` - 最新版本，可能包含最新功能但也可能有未测试的变化
+- `ghcr.io/ishangyi/moontv:pr-{number}` - PR 构建版本，用于测试新功能
 
 访问 `http://服务器 IP:3000` 即可。（需自行到服务器控制台放通 `3000` 端口）
 
@@ -181,7 +181,7 @@ docker run -d --name moontv -p 3000:3000 --env PASSWORD=your_password ghcr.io/lu
 ```yaml
 services:
   moontv-core:
-    image: ghcr.io/lunatechlab/moontv:latest
+    image: ghcr.io/ishangyi/moontv:latest
     container_name: moontv-core
     restart: unless-stopped
     ports:
@@ -198,7 +198,7 @@ services:
 ```yaml
 services:
   moontv-core:
-    image: ghcr.io/lunatechlab/moontv:latest
+    image: ghcr.io/ishangyi/moontv:latest
     container_name: moontv-core
     restart: unless-stopped
     ports:
@@ -380,6 +380,7 @@ MoonTV 支持标准的苹果 CMS V10 API 格式。
 - [Zwei](https://github.com/bestzwei) — 提供获取豆瓣数据的 cors proxy
 - [CMLiussss](https://github.com/cmliu) — 提供豆瓣 CDN 服务
 - 感谢所有提供免费影视接口的站点。
+- 感谢LunaTechLab
 
 ---
 
